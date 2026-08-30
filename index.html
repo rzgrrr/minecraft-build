@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlockCraft Build</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #101510;
+            color: white;
+        }
+
+        header {
+            background: #182518;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #4caf50;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #5cff63;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+            background:
+                linear-gradient(#0008, #0008),
+                radial-gradient(circle, #356b35, #101510 70%);
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #ddd;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #4caf50;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #1b251b;
+            padding: 30px;
+            width: 220px;
+            border-radius: 12px;
+            border: 1px solid #344934;
+        }
+
+        .card h3 {
+            margin: 15px 0;
+            color: #6cff70;
+        }
+
+        .team {
+            background: #151d15;
+        }
+
+        .member {
+            background: #202c20;
+            padding: 25px;
+            border-radius: 12px;
+            width: 250px;
+        }
+
+        .avatar {
+            font-size: 55px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+            text-align: left;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 14px;
+            margin: 8px 0 18px;
+            background: #1b251b;
+            border: 1px solid #405540;
+            border-radius: 8px;
+            color: white;
+        }
+
+        textarea {
+            height: 130px;
+            resize: vertical;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #0b0f0b;
+            color: #aaa;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">⛏️ BlockCraft Build</div>
+
+    <nav>
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#ekip">Ekibimiz</a>
+        <a href="#talep">Build Talebi</a>
+    </nav>
+</header>
+<section class="section">
+    <h2>🎮 Biz Kimiz?</h2>
+
+    <p style="max-width: 700px; margin: auto; line-height: 1.8; color: #ddd;">
+        Minecraft'ta yaratıcı yapılar tasarlayan bir build ekibiyiz.
+        Evlerden kalelere, şehirlerden özel projelere kadar
+        hayalindeki yapıyı Minecraft'ta oluşturmana yardımcı oluyoruz.
+    </p>
+</section>
+
+<section class="section team">
+    <h2>⚙️ Nasıl Çalışıyoruz?</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div style="font-size:45px;">📩</div>
+            <h3>1. Talep Gönder</h3>
+            <p>Ne yaptırmak istediğini bize anlat.</p>
+        </div>
+
+        <div class="card">
+            <div style="font-size:45px;">💰</div>
+            <h3>2. Fiyat Belirle</h3>
+            <p>Projen için uygun bir fiyat belirleyelim.</p>
+        </div>
+
+        <div class="card">
+            <div style="font-size:45px;">🏗️</div>
+            <h3>3. Build'e Başlayalım</h3>
+            <p>Senin istediğin yapıyı inşa edelim.</p>
+        </div>
+
+        <div class="card">
+            <div style="font-size:45px;">✅</div>
+            <h3>4. Teslim</h3>
+            <p>Build tamamlandığında projeyi teslim edelim.</p>
+        </div>
+
+    </div>
+</section>
+<section class="hero">
+    <div>
+        <h1>Hayalindeki Build'i İnşa Edelim!</h1>
+        <p>Profesyonel Minecraft build hizmeti.</p>
+
+        <a href="#talep" class="button">🚀 Build Talebi Oluştur</a>
+    </div>
+</section>
+
+<section class="section" id="hizmetler">
+    <h2>🧱 Hizmetlerimiz</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div style="font-size:45px;">🏠</div>
+            <h3>Evler</h3>
+            <p>Modern, orta çağ ve özel ev tasarımları.</p>
+        </div>
+
+        <div class="card">
+            <div style="font-size:45px;">🏰</div>
+            <h3>Kaleler</h3>
+            <p>Büyük ve detaylı kale projeleri.</p>
+        </div>
+
+        <div class="card">
+            <div style="font-size:45px;">🏙️</div>
+            <h3>Şehirler</h3>
+            <p>Şehir, köy ve büyük yapılar.</p>
+        </div>
+
+        <div class="card">
+            <div style="font-size:45px;">🌳</div>
+            <h3>Dekorasyon</h3>
+            <p>Haritanı daha güzel gösterecek detaylar.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section team" id="ekip">
+    <h2>👷 Build Ekibimiz</h2>
+
+    <div class="cards">
+
+        <div class="member">
+            <div class="avatar">👑</div>
+            <h3>Rüzgar</h3>
+            <p>Kurucu & Builder</p>
+        </div>
+
+        <div class="member">
+            <div class="avatar">🧱</div>
+            <h3>Red</h3>
+            <p>Builder</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section" id="talep">
+    <h2>📩 Build Talebi Gönder</h2>
+
+    <form onsubmit="gonder(event)">
+
+        <label>Minecraft kullanıcı adın</label>
+        <input id="isim" type="text" placeholder="Örn: Steve123" required>
+
+        <label>Ne yaptırmak istiyorsun?</label>
+        <select id="build" required>
+            <option value="">Seçiniz</option>
+            <option>Ev</option>
+            <option>Kale</option>
+            <option>Şehir</option>
+            <option>PvP Alanı</option>
+            <option>Dekorasyon</option>
+            <option>Özel Proje</option>
+        </select>
+
+        <label>Minecraft sürümün</label>
+        <input id="surum" type="text" placeholder="Örn: 1.21.1" required>
+
+        <label>Projenin detayları</label>
+        <textarea id="detay" placeholder="Nasıl bir build istediğini anlat..." required></textarea>
+
+        <button type="submit">📱 Teklif İste</button>
+
+    </form>
+</section>
+
+<footer>
+    © 2026 BlockCraft Build | Minecraft Build Ekibi
+</footer>
+
+<script>
+    function gonder(event) {
+        event.preventDefault();
+
+        const isim = document.getElementById("isim").value;
+        const build = document.getElementById("build").value;
+        const surum = document.getElementById("surum").value;
+        const detay = document.getElementById("detay").value;
+
+        const telefon = "905XXXXXXXXX";
+
+        const mesaj =
+            "🟩 Yeni Minecraft Build Talebi%0A%0A" +
+            "👤 Kullanıcı: " + encodeURIComponent(isim) + "%0A" +
+            "🏗️ Build: " + encodeURIComponent(build) + "%0A" +
+            "🎮 Sürüm: " + encodeURIComponent(surum) + "%0A" +
+            "📝 Detay: " + encodeURIComponent(detay);
+
+        window.open(
+            "https://www.instagram.com/minecraftbuildiniyap/",
+            "_blank"
+        );
+    }
+</script>
+
+</body>
+</html>
